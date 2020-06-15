@@ -1,0 +1,31 @@
+.header {
+  background-position-y: -150px;
+
+  &__title {
+    padding-top: 60px;
+    font-size: 52px;
+  }
+
+  &__slogan {
+    margin-top: 35px;
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  &__product-version {
+    font-size: 18px;
+  }
+}
+
+.header__download {
+  top: calc(100% - 33px);
+}
+
+.download__info {
+  margin-top: 20px;
+}
+
+.btn_size_large {
+  padding: 23px 63px;
+  font-size: 20px;
+}

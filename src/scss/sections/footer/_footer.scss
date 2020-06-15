@@ -1,0 +1,108 @@
+.footer {
+  overflow: hidden;
+  @include paddingY(40px,50px);
+  &__selection {
+    color:  black;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 50px;
+  }
+  &-text {
+    @include text($main-font,14px,400,$sm-txt-col);
+    line-height: 21px;
+    letter-spacing: 0.28px;
+  }
+  &-title {
+    @include text($main-font,16px);
+    letter-spacing: 0.32px;
+  }
+}
+
+.footer__description {
+  margin-bottom: 18px;
+}
+.footer__logo {
+  justify-content: flex-start;
+  margin-bottom: 35px;
+  &-img {
+    display: none;
+  }
+  &-name {
+    margin-left: 0;
+  }
+  &:hover {
+    .footer__logo-name {
+      color: black;
+    }
+    .footer__logo-img {
+      background-image: url('../img/logo-black.png');
+    }
+    .footer__selection {
+      color: $main-color  ;
+    }
+  }
+  &-text {
+    width: 250px;
+  }
+}
+
+.nav-men {
+  &__link {
+    @include text($main-font, 15px, 400, $main-color);
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    border-bottom: 1px solid white;
+    &:hover {
+      border-bottom: 1px solid $main-font;
+    }
+  }
+}
+.footer__nav {
+  @include marginY(18px,18px);
+  &-menu {
+    margin-top: 23px;
+  }
+}
+
+.contacts {
+  &-work-time {
+    @include text($main-font, 12px, 400, $footer-col);
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+  }
+  &-phone {
+    @include text($main-font, 30px, 700, $footer-col);
+    letter-spacing: 0.6px;
+  }
+  &__footer-title {
+    @include marginY(38px, 20px)
+  }
+  &__footer-text {
+    width: 217px;
+  }
+}
+.footer__contacts {
+  @include marginY(18px,18px);
+  &-phone {
+    margin-bottom: 15px;
+  }
+  &__footer-text{
+    width: 301px;
+  }
+}
+
+.company-info {
+  &__footer-title {
+    margin-bottom: 24px;
+  }
+  &__footer-text{
+    width: 304px;
+  }
+}
+.footer__company-info {
+  @include marginY(18px, 50px)
+}

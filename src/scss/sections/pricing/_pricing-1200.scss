@@ -1,0 +1,25 @@
+.pricing__heading {
+  margin-bottom: 70px;
+}
+
+@media screen and (min-width: 1150px) {
+  .pricing {
+    padding-bottom: 150px;
+
+    &__heading {
+      margin-bottom: 100px;
+    }
+
+    &__list {
+      max-width: inherit;
+    }
+  }
+
+  .b-pricing-plan {
+    margin: 0 7px;
+
+    &_selected {
+      margin: 0 24px;
+    }
+  }
+}

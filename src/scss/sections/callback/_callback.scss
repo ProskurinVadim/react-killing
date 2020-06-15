@@ -1,0 +1,52 @@
+.callback {
+  background-color: $section-color;
+  padding: 30px 0 40px 0;
+
+  &__container{
+    text-align: center;
+  }
+  &__description {
+    @include text($main-font,24px,700);
+    margin-bottom: 25px;
+    line-height: 1.5em;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__input {
+    margin-top: 15px;
+    border: none;
+    outline: none;
+  }
+
+  &__btn {
+    padding: 16px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    min-width: 140px;
+    text-align: center;
+
+    &._call {
+      display: none;
+    }
+
+    &._subs {
+      margin-top: 20px;
+    }
+  }
+}
+
+.input-field {
+  @include font(14px,400,$main-font);
+  @include round-element(16px,28px);
+  width: 290px;
+  box-sizing: border-box;
+}

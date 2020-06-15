@@ -1,0 +1,24 @@
+.features {
+  @include paddingY(0,38px);
+  &-list {
+    margin-top: 60px;
+    width: fit-content;
+  }
+  &__heading {
+    padding-top: 94px;
+  }
+  &__container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  &-text {
+    width: 350px;
+  }
+  &__img {
+    margin-top: 200px;
+    position: absolute;
+    width: 100%;
+    left: 45%;
+    top: 0;
+  }
+}

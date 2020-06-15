@@ -1,0 +1,18 @@
+.person {
+  @include marginY(87px,48px);
+  &__name {
+    font-size: 24px;
+  }
+}
+.carousel__item-description {
+  width: 734px;
+}
+
+.feedback__social-networks {
+  margin-bottom: 80px;
+
+  &:before {
+    width: 780px;
+    left: calc(50% - 390px);
+  }
+}

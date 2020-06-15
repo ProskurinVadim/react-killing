@@ -1,0 +1,32 @@
+.footer__logo {
+  position: relative;
+
+  &-img {
+    display: block;
+  }
+
+  &-name {
+    margin-left: 18px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    bottom: -20px;
+    display: block;
+    height: 1px;
+    background-color: #c7c7c7;
+    opacity: 0.2;
+  }
+
+  &-text {
+    width: 301px;
+  }
+}
+
+.company-info {
+  &__footer-text{
+    width: 401px;
+  }
+}

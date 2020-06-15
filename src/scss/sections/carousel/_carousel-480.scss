@@ -1,0 +1,21 @@
+.person {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  width: 300px;
+  &__name {
+    padding-left: 23px;
+    font-size: 22px;
+  }
+  &__job {
+    padding-left: 23px;
+    text-align: left;
+    font-size: 15px;
+  }
+}
+.social-btn__name {
+  font-size: 21px;
+}
+.feedback__social-networks {
+  @include marginY(57px,60px);
+}

@@ -1,0 +1,142 @@
+.main-color_selection {
+  color: $main-color;
+}
+.arrow {
+  cursor: pointer;
+  z-index: 777;
+  position: absolute;
+  top: 73%;
+  transform: scaleY(1.5);
+  font-weight: 100;
+  font-size: 23px;
+  color: #b3b3b3;
+  &_left {
+    left: 0;
+  }
+
+  &_right {
+    right: 0;
+  }
+}
+.carousel {
+  &-container{
+    display: flex;
+    align-items: center;width: 50000px;
+    margin-left: 0;
+  }
+  &__item {
+    @include flex-column-center;
+    justify-content: center;
+
+    &-description {
+      @include text($additional-font, 17px, 400, $mid-txt-col);
+      margin-top: 23px;
+      text-align: center;
+      line-height: 24px;
+
+      &::before {
+        content: '@';
+        color: $main-color;
+      }
+    }
+
+    &-data {
+      @include text($main-font, 16px, 400, $sm-txt-col);
+      margin-top: 16px;
+    }
+  }
+
+}
+
+.person {
+  margin-top: 63px;
+
+  &__img {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__name {
+    @include text($main-font, 24px, 700, $mid-txt-col);
+    margin-top: 25px;
+  }
+
+  &__job {
+    @include text($main-font, 16px, 400, $main-color);
+    margin-top: 7px;
+    text-align: center;
+
+    &::before {
+      content: "@";
+    }
+  }
+}
+
+.social-networks {
+  @include flex-column-center;
+}
+
+.feedback__social-networks {
+  @include marginY(35px, 70px);
+}
+
+.social-btn {
+  @include paddingY(17px, 18px);
+  width: 280px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  @include text($main-font, 21px, 400, #fff);
+  text-align: center;
+  border: 1px solid transparent;
+  position: relative;
+  transition: 0.4s;
+
+  i {
+    position: absolute;
+    left: 25px;
+  }
+
+  &._git {
+    background-color: rgb(243, 243, 243);
+    color: #2b414d;
+
+    &:hover {
+      background-color: #2b414d;
+      color: rgb(243, 243, 243);
+    }
+  }
+
+  &._twitter {
+    background-color: rgb(38, 166, 209);
+    color: #ffffff;
+
+    &:hover {
+      background-color: #fff;
+      border: 1px solid rgb(38, 166, 209);
+      color: rgb(38, 166, 209);
+    }
+  }
+
+  &._facebook {
+    background-color: rgb(59, 89, 152);
+    color: #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+      border: 1px solid rgb(59, 89, 152);
+      color: rgb(59, 89, 152);
+    }
+  }
+
+  &__name {
+    @include text($main-font, 21px, 400, #fff);
+    text-align: center;
+  }
+
+  &__subscribers {
+    @include text($main-font, 14px, 400, $sm-txt-col);
+    text-align: center;
+    margin: 18px 0;
+  }
+}

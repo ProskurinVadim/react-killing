@@ -1,0 +1,49 @@
+@mixin round-element ($paddingY,$paddingX) {
+  padding: $paddingY $paddingX ;
+  border-radius: 9999px;
+  };
+
+@mixin text($font-family,$font-size,$font-weight:400,$color:black) {
+  font-family: $font-family;
+  font-size: $font-size;
+  @if $font-weight != 400 {font-weight:$font-weight};
+  @if $font-weight != black {color: $color};
+};
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@mixin  font($font-size,$font-weight:400,$font-family:false) {
+  font-size: $font-size;
+  @if $font-weight != 400 {font-weight:$font-weight};
+  @if $font-family != false {font-family:$font-family}
+};
+
+@mixin  marginY($margin-top,$margin-bottom) {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
+}
+@mixin paddingY($padding-top,$padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}

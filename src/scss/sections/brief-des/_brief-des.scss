@@ -1,0 +1,33 @@
+.brief-des {
+  padding: 120px 0 80px 0;
+
+  &__container {
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  &__section-description {
+    margin-top: 24px;
+  }
+
+  &__views {
+    margin-top: 30px;
+  }
+}
+
+.section-description {
+  font-family: $additional-font;
+  color: $mid-txt-col;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+.views {
+  text-align: center;
+  line-height: 36px;
+
+  &__button {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}

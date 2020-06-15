@@ -1,0 +1,28 @@
+@media screen and (min-width: 1110px) {
+  .callback {
+    padding: 45px 0;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__title {
+      font-size: 30px;
+      margin: 0;
+    }
+
+    &__form {
+      justify-content: flex-end;
+      margin: 0 0 0 auto;
+    }
+
+    &__input {
+      margin: 0 20px 0 0;
+    }
+
+    &__btn._call {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.header {
+  background: url(../img/header-background-1200.png) center/cover no-repeat;
+  background-position-y: 0;
+
+  &__title {
+    padding-top: 60px;
+    font-size: 74px;
+  }
+
+  &__slogan {
+    margin-top: 20px;
+  }
+}

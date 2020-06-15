@@ -1,0 +1,21 @@
+.logo {
+	text-decoration: none;
+	@include flex-row-center();
+	
+	&__img {
+		width: 43px;
+		padding: 20px 0 ;
+		transition: 0.4s;
+		background-image: url('../img/logo.png');
+	}
+
+	&__text {
+		font-family: $additional-font;
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: 700;
+		color: $main-color;
+		margin-left: 14px;
+		transition: 0.4s;
+	}
+}

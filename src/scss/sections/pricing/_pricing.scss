@@ -1,0 +1,88 @@
+.pricing {
+  padding: 70px 0 80px 0;
+  background: linear-gradient(to top, $dark-bgc 20%, rgba(0, 0, 0, 0) 50%, $dark-bgc 80%), url(../img/pricing-background.png) center/cover no-repeat;
+
+  &__heading {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    @include flex-column-center;
+    margin: 0 auto;
+  }
+}
+
+.b-pricing-plan {
+  width: 257px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: $main-font;
+  margin: 7px 20px;
+
+  &__heading {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 42px 0 31px 0;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  &__price {
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 60px;
+  }
+
+  &__period {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+    &:after {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 60px;
+        background-color: #8d81ac;
+        margin: 35px auto 25px auto;
+    }
+  }
+  &__list {
+    min-height: 4em;
+    display: block;
+  }
+
+  &__feature {
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 2em;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 15px 38px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 25px 0;
+    transition: 0.4s;
+  }
+
+  &__btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    color: rgb(127, 109, 120);
+  }
+}
+
+.b-pricing-plan_selected {
+  transform: scale(1.15);
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 40px 20px;
+
+  .b-pricing-plan__heading {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

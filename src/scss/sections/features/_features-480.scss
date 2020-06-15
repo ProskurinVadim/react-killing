@@ -1,0 +1,23 @@
+.features {
+  &-list__position {
+    margin-top: 60px;
+  }
+  &__item {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-text {
+    width: 289px;
+  }
+  &__heading {
+    margin-top: 0;
+  }
+  &__description {
+    margin-top: 21px;
+  }
+  &__img {
+    margin-top: 37px;
+  }
+}

@@ -1,0 +1,56 @@
+.header {
+  position: relative;
+  height: 700px;
+  background: url(../img/header-background-480.png) center/500px no-repeat;
+  background-position-y: -170px;
+
+  &__container {
+    text-align: center;
+    font-family: $main-font;
+  }
+
+  &__title {
+    padding-top: 43px;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  &__slogan {
+    text-transform: capitalize;
+    color: $main-color;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+
+  &__product-version {
+    text-transform: uppercase;
+    color: $sm-txt-col;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+
+.download {
+  text-align: center;
+
+  &__info {
+    color: $sm-txt-col;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-top: 13px;
+  }
+}
+
+.header__download {
+  width: calc(100vw - 20px);
+  max-width: 1180px;
+  position: absolute;
+  top: calc(100% - 24px);
+}
+
+.btn_size_large {
+  font-size: 17px;
+  padding: 15px 32px;
+}

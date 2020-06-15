@@ -1,0 +1,46 @@
+.navbar {
+	padding: 22px 0;
+}
+
+.menu-btn {
+	display: none;
+}
+
+.navbar__navbar-nav {
+	margin-top: 22px;
+}
+
+.navbar-nav {
+	@include flex-row-center;
+	width: 100%;
+	position: relative;
+	
+	&__item {
+		width: auto;
+		padding: 0;
+		background: none;
+		border: none;
+		margin: 0 24px;
+		text-align: center;
+	}
+	
+	&__link {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 20px;
+		color: $main-color;
+	}
+}
+
+.navbar-nav__item:hover .navbar-nav__link {
+	color: #fff;
+}
+
+.navbar-nav__item:hover:before {
+	display: none;
+}
+
+.btn_size_small {
+	font-size: 16px;
+	padding: 12px 35px;
+}

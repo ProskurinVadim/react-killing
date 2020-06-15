@@ -1,0 +1,31 @@
+.person {
+  @include marginY(50px,48px)
+}
+.carousel__item-description {
+  font-size: 20px;
+}
+.social-networks {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-networks-item {
+  padding: 0 20px;
+}
+.feedback__social-networks {
+  @include marginY(83px,59px)
+}
+
+.feedback__social-networks {
+  position: relative;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 1px;
+    width: 100vw;
+    background-color: #bebebe;
+    top: -30px;
+  }
+}

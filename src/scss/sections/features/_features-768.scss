@@ -1,0 +1,13 @@
+.features {
+  padding-top: 30px;
+  &-text {
+    width: 522px;
+  }
+  &-list {
+    width: 650px;
+    margin: 0 auto;
+  }
+  &__img {
+    text-align: center;
+  }
+}

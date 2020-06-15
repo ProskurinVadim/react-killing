@@ -1,0 +1,42 @@
+.menu-btn {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 26px;
+	height: 21px;
+	align-items: flex-end;
+	
+	&__el {
+		height: 3px;
+		background-color: #e5e3e3;
+		border-radius: 2px;
+		display: inline-block;
+		width: 26px;
+		margin-top: 6px;
+	}
+	
+	&__el_1 {
+		width: 20px;
+		margin-top: 0;
+	}
+}
+
+.menu-btn.open {
+	.menu-btn__el {
+		margin: 0;
+		position: absolute;
+		top: 10px;
+	}
+	
+	.menu-btn__el_1 {
+		display: none;
+	}
+	
+	.menu-btn__el_2 {
+		transform: rotate(45deg);
+	}
+	
+	.menu-btn__el_3 {
+		transform: rotate(-45deg);
+	}
+}

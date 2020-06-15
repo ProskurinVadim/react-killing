@@ -1,0 +1,35 @@
+.footer {
+
+  &__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+.footer__description {
+  width: 35%;
+}
+.footer__logo {
+  &::after {
+    display: none;
+  }
+}
+
+.footer__nav {
+  width: 35%;
+}
+
+.footer__contacts {
+  width: 35%;
+}
+
+.company-info {
+  &__footer-text {
+    width: 301px;
+  }
+}
+.footer__company-info {
+  width: 35%;
+}

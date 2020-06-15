@@ -1,0 +1,18 @@
+.testimonials__list {
+  @include flex-space-around;
+  margin: 0 15px;
+}
+
+.b-testimonial {
+  width: 310px;
+  margin-bottom: 55px;
+
+  &__link {
+    height: 65px;
+  }
+}
+
+.testimonials__text-info {
+  display: inline-block;
+  margin-top: 40px;
+}
